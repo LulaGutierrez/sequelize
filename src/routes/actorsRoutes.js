@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const genresController = require('../controllers/genresController');
+const actorsController = require('../controllers/actorsController');
 
-router.get('/genres', genresController.list);
+router.get('/actor', actorsController.list);
+router.get('/actors/detail/:id', actorsController.detail);
 
 module.exports = router;
