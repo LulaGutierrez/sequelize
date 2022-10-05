@@ -7,14 +7,14 @@ module.exports = {
             return res.render('genresList',{
                 genres
             })
-            .catch(error => console.log(error))
         })
+        .catch(error => console.log(error));
     },
     detail : (req,res) => {
         db.Genre.findByPk(req.params.id)
         .then(genre => res.render('genresDetail', {
             genre
         }) )
-        .catch(error => console.log(error))
+        .catch(error => console.log(error));
     }
 }

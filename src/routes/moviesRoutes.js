@@ -8,4 +8,5 @@ router.get('/movies/recommended', moviesController. recommended);
 router.get('/movies/detail/:id', moviesController.detail);
 
 
+
 module.exports = router;

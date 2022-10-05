@@ -8,6 +8,7 @@
 
 </head>
 <body>
+    <%- include('./partials/header') %>
     <figure>
         <img src="/img/logo-DH.png" alt="Logo Digital House">
     </figure>
@@ -17,6 +18,8 @@
     <p>AWARDS: <%= movie.awards %> </p>
     <p>LENGTH: <%= movie.length + ' min'%> </p>
     <p>RELEASE DATE: <%= movie.release_date %> </p>
+    <br>
+    <a href="/movies/edit/<%= movies.id %> ">Editar pelicula</a>
 
 </body>
 </html>

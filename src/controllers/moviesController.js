@@ -7,7 +7,7 @@ module.exports = {
             return res.render('moviesList',{
                 movies
             })
-            .catch(error => console.log(error))
+            .catch(error => console.log(error));
         })
     },
     new : (req,res) => {
@@ -19,7 +19,7 @@ module.exports = {
             return res.render('moviesList',{
                 movies
             })
-            .catch(error => console.log(error))
+            .catch(error => console.log(error));
         })
     },
     recommended : (req,res) => {
@@ -32,7 +32,7 @@ module.exports = {
             return res.render('moviesList',{
                 movies
             })
-            .catch(error => console.log(error))
+            .catch(error => console.log(error));
         }) 
     },
     detail : (req,res) => {
@@ -40,7 +40,7 @@ module.exports = {
         .then(movie => res.render('moviesDetail', {
             movie
         }))
-        .catch(error => console.log(error))
+        .catch(error => console.log(error));
     }
 }
 
